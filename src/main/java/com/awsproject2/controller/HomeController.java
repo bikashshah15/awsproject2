@@ -10,4 +10,8 @@ public class HomeController {
     public String index(Model model){
         return "index";
     }
+    @GetMapping("/message")
+    public String newMessage(Model model){
+        return "message";
+    }
 }
