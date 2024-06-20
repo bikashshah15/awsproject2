@@ -55,5 +55,5 @@ jobs:
         run: docker run -f awsproject2 || true
 
       - name: Run Docker Container
-        run: docker run -d -p 8080:8080 awsproject2 bikashshah15/awsproject2:latest
+        run: docker run -d -p 8080:8080 --name awsproject2 bikashshah15/awsproject2:latest
 
