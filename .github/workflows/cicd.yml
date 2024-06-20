@@ -39,7 +39,7 @@ jobs:
       run: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
 
     - name: Build Docker image
-      run: docker build -t bikashshah15/awsproject2
+      run: docker build -t bikashshah15/awsproject2 .
 
     - name: Publish image to Docker Hub
       run: docker push bikashshah15/awsproject2:latest
